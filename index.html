@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МАГАЗИН RAIZEN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="money-background" id="money"></div>
+
+    <header class="hero">
+        <h1 class="logo">МАГАЗИН RAIZEN</h1>
+        <p class="subtitle">НАДЁЖНАЯ СКУПКА И ПРОДАЖА</p>
+    </header>
+
+    <main class="container">
+
+        <h2 class="main-title">
+            💎 MATRESHKA RP | СКУПКА & ПРОДАЖА 💎
+        </h2>
+
+        <section class="services">
+            <div class="service-card">
+                <div class="emoji">💰</div>
+                <h3>СКУПАЮ ВИРТЫ</h3>
+                <p>На всех серверах!</p>
+            </div>
+
+            <div class="service-card">
+                <div class="emoji">⭐</div>
+                <h3>СКУПАЮ ГОЛДУ</h3>
+                <p>На всех серверах!</p>
+            </div>
+
+            <div class="service-card">
+                <div class="emoji">💸</div>
+                <h3>ПРОДАЮ ВИРТЫ</h3>
+                <p>Любой сервер!</p>
+            </div>
+
+            <div class="service-card">
+                <div class="emoji">👑</div>
+                <h3>ПРОДАЮ ГОЛДУ</h3>
+                <p>Любой сервер!</p>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <h2>🔥 МОИ ПРЕИМУЩЕСТВА</h2>
+            <p>🔥 Выгодные цены</p>
+            <p>⚡ Быстрые сделки</p>
+            <p>🌍 Работаю со всеми серверами</p>
+            <p>💬 Гарант в чатах, а также есть много поручителей</p>
+        </section>
+
+        <section class="schedule">
+            <h2>🕒 ГРАФИК РАБОТЫ</h2>
+            <p>Каждый день: <strong>09:00 – 18:00</strong></p>
+        </section>
+
+        <section class="contacts">
+            <h2>📱 МОИ КОНТАКТЫ</h2>
+
+            <a class="contact-button telegram"
+               href="https://t.me/rizenru" target="_blank">
+                ✈️ МОЙ TELEGRAM
+            </a>
+
+            <a class="contact-button chat"
+               href="https://t.me/KewazzoNFT" target="_blank">
+                💬 ЧАТ, ГДЕ Я ГАРАНТ
+            </a>
+
+            <a class="contact-button guarant"
+               href="https://t.me/rizenruu" target="_blank">
+                🛡️ КТО ЗА МЕНЯ РУЧАЕТСЯ
+            </a>
+
+            <a class="contact-button reviews"
+               href="https://t.me/rizenrurrrr" target="_blank">
+                ⭐ ОТЗЫВЫ
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 RAIZEN | MATRESHKA RP</p>
+    </footer>
+
+    <script>
+        const money = document.getElementById("money");
+        const symbols = ["💵", "💸", "💰"];
+
+        for (let i = 0; i < 35; i++) {
+            const item = document.createElement("span");
+            item.className = "money";
+            item.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+            item.style.left = Math.random() * 100 + "%";
+            item.style.animationDuration = (5 + Math.random() * 8) + "s";
+            item.style.animationDelay = (Math.random() * 8) + "s";
+            item.style.fontSize = (16 + Math.random() * 20) + "px";
+            money.appendChild(item);
+        }
+    </script>
+
+</body>
+</html>
